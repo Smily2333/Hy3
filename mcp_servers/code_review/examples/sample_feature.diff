@@ -1,0 +1,18 @@
+diff --git a/src/catalog.py b/src/catalog.py
+index d3a2f16..78559aa 100644
+--- a/src/catalog.py
++++ b/src/catalog.py
+@@ -1,2 +1,11 @@
+-def list_products(repository):
+-    return repository.all()
++def list_products(repository, page: int = 1, page_size: int = 20):
++    """Return one page of products using one-based page numbers."""
++    if page < 1:
++        raise ValueError("page must be at least 1")
++    if page_size < 1 or page_size > 100:
++        raise ValueError("page_size must be between 1 and 100")
++
++    offset = page * page_size
++    items = repository.list(offset=offset, limit=page_size)
++    total = repository.count()
++    return {"items": items, "page": page, "page_size": page_size, "total": total}

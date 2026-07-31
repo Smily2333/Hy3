@@ -1,0 +1,15 @@
+[mcp_servers.hy3-code-review]
+command = "py"
+args = [
+  "-3.13",
+  "-m",
+  "uv",
+  "--directory",
+  "<ABSOLUTE_PATH_TO_REPOSITORY>/mcp_servers/code_review",
+  "run",
+  "--env-file",
+  "<ABSOLUTE_PATH_TO_REPOSITORY>/mcp_servers/code_review/.env",
+  "hy3-code-review-mcp",
+]
+startup_timeout_sec = 30
+tool_timeout_sec = 180

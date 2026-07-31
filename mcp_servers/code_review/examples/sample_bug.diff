@@ -1,0 +1,10 @@
+diff --git a/src/profile.py b/src/profile.py
+index 7c2c1b1..f8a5e20 100644
+--- a/src/profile.py
++++ b/src/profile.py
+@@ -10,4 +10,1 @@ def display_name(repository, user_id: str) -> str | None:
+-    user = repository.find(user_id)
+-    if user is None:
+-        return None
+-    return user.name.strip()
++    return repository.find(user_id).name.strip()

@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+.venv/
+.uv-cache/
+.uv-bin/
+.uv-tools/
+.workbuddy/mcp.json
+.cursor/mcp.json
+.codex/config.toml
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
