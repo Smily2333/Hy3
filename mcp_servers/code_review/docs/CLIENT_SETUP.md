@@ -8,7 +8,9 @@ real `HY3_API_KEY`.
 The Windows examples use `py -3.13 -m uv` because this development machine has
 uv installed as a Python user package but its Scripts directory is not on
 `PATH`. If `uv` is on `PATH`, the server command may instead be `uv` with args
-starting at `--directory`.
+starting at `--directory`. The Codex example also sets uv's cache to the
+project-local ignored `.uv-cache` directory so sandboxed clients do not need
+write access to the user-level uv cache.
 
 ## WorkBuddy
 
@@ -93,6 +95,9 @@ the absolute path, confirm `.env` is configured, then restart the MCP server.
 ## Troubleshooting
 
 - Red or disconnected server: verify the absolute path and the `py` command.
+- Codex reports `MCP error -32000: Connection closed`: confirm its command
+  includes `--cache-dir <repository>/mcp_servers/code_review/.uv-cache` before
+  `--directory`, then restart Codex or open a new task.
 - Server starts but tool calls fail: verify `HY3_API_KEY`, `HY3_BASE_URL`, and
   `HY3_MODEL`.
 - JSON-RPC or parsing errors: ensure the server writes no normal logs to
