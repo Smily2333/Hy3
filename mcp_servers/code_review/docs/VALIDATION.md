@@ -82,13 +82,15 @@ tools, calls all three tools, and checks their structured results.
   - invoked `review_diff` with `severity_threshold=medium`;
   - returned one high-severity finding at `src/profile.py:13`;
   - identified the missing `None` check and recommended restoring the guard.
-
-The following still require interactive validation:
-
-- [ ] Codex end-to-end Demo B
-- [ ] Video/GIF recording
-
-These items must be completed before claiming the Issue is fully delivered.
+- [x] Codex end-to-end Demo B:
+  - connected through the shared Codex MCP configuration;
+  - invoked `generate_test_plan` with `test_framework=pytest`;
+  - returned prioritized pagination regression and boundary scenarios;
+  - included coverage that exposes the one-based offset defect.
+- [x] Two-client recordings:
+  - [WorkBuddy review demo](../assets/workbuddy-review-demo.mp4), 29.35 seconds;
+  - [Codex test-plan demo](../assets/codex-test-plan-demo.mp4), 83.48 seconds;
+  - combined duration 112.83 seconds, with no API key or `.env` content shown.
 
 ## Reproduction commands
 

@@ -128,7 +128,8 @@ When the `uv` executable is available on `PATH`, replace
 - WorkBuddy and Codex configuration examples: complete
 - live calls to all three tools through Hy3 and MCP stdio: complete
 - live WorkBuddy call: complete
-- live Codex call: pending interactive validation
+- live Codex call: complete
+- two-client demo recordings: complete
 
 See [docs/CLIENT_SETUP.md](docs/CLIENT_SETUP.md) for project-level client
 configuration and verification prompts.
@@ -137,6 +138,8 @@ configuration and verification prompts.
 
 - `examples/sample_bug.diff`: fixed input for the WorkBuddy review demo
 - `examples/sample_feature.diff`: fixed input for the Codex test-plan demo
+- [WorkBuddy `review_diff` demo](assets/workbuddy-review-demo.mp4)
+- [Codex `generate_test_plan` demo](assets/codex-test-plan-demo.mp4)
 - [Architecture and trust boundaries](docs/ARCHITECTURE.md)
 - [Client setup](docs/CLIENT_SETUP.md)
 - [Demo script](docs/DEMO.md)
@@ -156,8 +159,6 @@ configuration and verification prompts.
 
 ## Delivery status
 
-All local engineering, packaging, and live Hy3 API checks are complete.
-WorkBuddy validation is complete. Codex end-to-end validation and the final
-recording remain pending.
-See [docs/VALIDATION.md](docs/VALIDATION.md) for the exact evidence and
-remaining checkboxes.
+All local engineering, packaging, live Hy3 API checks, two-client validation,
+and demo recordings are complete. See [docs/VALIDATION.md](docs/VALIDATION.md)
+for the evidence and reproduction commands.

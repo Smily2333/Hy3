@@ -62,10 +62,10 @@ Show the MCP server configuration and the three available tool names:
 
 ## Recording checklist
 
-- [ ] Both clients are visible by name.
-- [ ] Both calls are real Hy3 API calls.
-- [ ] Tool names are visible.
-- [ ] No API key or private path is exposed.
-- [ ] Results are readable at normal playback speed.
-- [ ] Total duration is at most two minutes.
-- [ ] GIF/video is added under `assets/` or linked from README.
+- [x] Both clients are visible by name.
+- [x] Both calls are real Hy3 API calls.
+- [x] Tool names are visible.
+- [x] No API key, token, or `.env` content is exposed.
+- [x] Results are readable at normal playback speed.
+- [x] Total duration is at most two minutes.
+- [x] Videos are added under `assets/` and linked from README.

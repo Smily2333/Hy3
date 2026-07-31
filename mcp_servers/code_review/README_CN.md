@@ -132,6 +132,8 @@ Codex 项目级配置路径：
 
 - `examples/sample_bug.diff`：用于演示 `review_diff`
 - `examples/sample_feature.diff`：用于演示 `generate_test_plan`
+- [WorkBuddy `review_diff` 演示](assets/workbuddy-review-demo.mp4)
+- [Codex `generate_test_plan` 演示](assets/codex-test-plan-demo.mp4)
 - [Demo 脚本](docs/DEMO.md)
 - [验证记录](docs/VALIDATION.md)
 - [架构和安全边界](docs/ARCHITECTURE.md)
@@ -157,10 +159,6 @@ Codex 项目级配置路径：
 - Inspector 通过开发入口和安装入口发现 tools；
 - WorkBuddy 和 Codex 项目级配置示例。
 
-真实 Hy3 验收已完成，三个 tools 均已通过 MCP stdio 调用。仍需完成：
-
-- WorkBuddy 端到端 `review_diff` 演示已完成；
-- Codex 端到端演示；
-- 最终视频或 GIF。
-
-完成这些外部验证前，不应宣称 Issue 已全部交付。
+真实 Hy3 验收已完成，三个 tools 均已通过 MCP stdio 调用。WorkBuddy
+端到端 `review_diff`、Codex 端到端 `generate_test_plan` 以及双客户端
+演示视频均已完成。

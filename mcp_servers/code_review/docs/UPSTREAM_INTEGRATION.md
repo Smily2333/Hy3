@@ -38,14 +38,14 @@ Add the equivalent Chinese entry to `README_CN.md` linking to
 
 ## Pull request checklist
 
-- [ ] Fork remote is configured.
-- [ ] Work branch starts from `rhinobird2026`.
-- [ ] Only relevant project and root README files are changed.
-- [ ] Test, lint, format, and build commands pass from a clean checkout.
-- [ ] WorkBuddy and Codex validations are recorded.
-- [ ] Demo video/GIF is linked.
-- [ ] PR title references Issue #3.
-- [ ] PR base is `Tencent-Hunyuan/Hy3:rhinobird2026`.
+- [x] Fork remote is configured.
+- [x] Work branch starts from `rhinobird2026`.
+- [x] Only relevant project files are changed.
+- [x] Test, lint, format, and build commands pass from a clean checkout.
+- [x] WorkBuddy and Codex validations are recorded.
+- [x] Demo videos are linked.
+- [x] PR title references Issue #3.
+- [x] PR base is `Tencent-Hunyuan/Hy3:rhinobird2026`.
 
 Suggested PR title:
 
