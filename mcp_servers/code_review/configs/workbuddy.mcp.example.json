@@ -6,6 +6,8 @@
         "-3.13",
         "-m",
         "uv",
+        "--cache-dir",
+        "<ABSOLUTE_PATH_TO_REPOSITORY>/mcp_servers/code_review/.uv-cache",
         "--directory",
         "<ABSOLUTE_PATH_TO_REPOSITORY>/mcp_servers/code_review",
         "run",
